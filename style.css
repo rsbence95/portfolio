@@ -10,7 +10,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
+.all-text {
+  text-align: justify;
+}
 .container {
   display: flex;
   max-width: 1200px;
@@ -113,6 +115,16 @@ button:hover {
   background: #27ae60; /* Világosabb kék a hover effektushoz */
 }
 
+/* Link alap stílus */
+
+/* Hover effektus: színváltozás és enyhe mozgás */
+
+.site_link {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: larger;
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

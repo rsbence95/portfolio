@@ -1,0 +1,145 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2f3640; /* Sötét szürke háttér */
+  color: #e1e1e1; /* Világos szöveg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.all-text {
+  text-align: justify;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  background: #34495e; /* Sötét kék szürke */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  background: #2980b9; /* Neon kék */
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  min-width: 250px;
+  box-sizing: border-box;
+  color: #ffffff; /* Fehér szöveg */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.h2_name {
+  color: #ffff;
+}
+.sidebar h1,
+.sidebar p {
+  /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);*/
+  color: #ffff;
+}
+.sidebar .profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.icon_bar {
+  margin-top: 50px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+  box-sizing: border-box;
+  color: #e1e1e1;
+}
+
+.content h1,
+h2 {
+  color: #2980b9; /* Neon kék szövegek */
+}
+
+.skills,
+.projects,
+.contact {
+  margin-top: 20px;
+}
+
+.projects .project-card {
+  background: #2980b9; /* Sötét szürke kártyák */
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.projects .project-card:hover {
+  transform: scale(1.05);
+  background: #1474b4; /* Sötét szürke szín változás hoverre */
+}
+
+.contact a {
+  color: #2980b9; /* Neon kék linkek */
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: black; /* Neon kék gomb */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #27ae60; /* Világosabb kék a hover effektushoz */
+}
+
+/* Link alap stílus */
+
+/* Hover effektus: színváltozás és enyhe mozgás */
+
+.site_link {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    text-align: left;
+  }
+  .projects .project-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
